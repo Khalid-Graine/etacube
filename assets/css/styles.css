@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+
+:root {
+  --small-margin: 10px;
+  --main-color: yellow;
+  --primary-color: #da373d;
+  --secondary-color: #1f2937;
+}
+body {
+  background-color: #1f2937;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.btn {
+  background-color: blue;
+  color: white;
+}
+.title {
+  padding-top: 14px;
+  padding-bottom: 18px;
+}
+.page-margin {
+  margin-top: 90px ;
+  margin-bottom: 0px ;
+}
+.desc {
+  color: #d2d5dbe8;
+  /* color: red; */
+}
+.card-background {
+  background-color: rgb(55 65 81);
+}
+
+.countainer {
+  padding-right: 30px;
+  padding-left: 30px;
+}
