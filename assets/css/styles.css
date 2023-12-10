@@ -19,6 +19,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  background-color: #1f2937;
   font-family: 'Poppins', sans-serif;
 }
 .btn {
@@ -41,7 +42,30 @@ body {
   background-color: rgb(55 65 81);
 }
 
+
 .countainer {
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 16px;
+  padding-left: 16px;
 }
+
+@media (min-width: 768px) {
+  .countainer {
+    padding-right: 40px;
+  padding-left: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .countainer {
+    padding-right: 70px;
+  padding-left: 70px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .countainer {
+    padding-right: 30px;
+  padding-left: 30px;
+  }
+}
+

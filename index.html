@@ -16,28 +16,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css"
       rel="stylesheet"
     />
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              main: 'yellow',
-              primary: 'blue',
-              secondary: '#1f2937',
-              btn: 'blue'
-            }
-          },
-         
-        }
-      }
-    </script>
-    
   </head>
   <body>
+  
 
     <!-- header -->
     <header>
-      <nav class="secondary">
+      <nav class="">
         <div class=" max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           
             <div class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -46,7 +31,7 @@
          
             </div>
               
-          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200  secondary" aria-controls="navbar-default" aria-expanded="false">
+          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden  " aria-controls="navbar-default" aria-expanded="false">
               <span class="sr-only">Open main menu</span>
               <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
@@ -54,14 +39,15 @@
           </button>
           <div class="hidden w-full md:block md:w-auto" id="navbar-default">
       
-            <ul class="font-medium secondary flex flex-col p-4 md:p-0 mt-4  rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  ">
+            <ul class="font-medium  flex flex-col p-4 md:p-0 mt-4  rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  ">
+              
                <!-- item 1 -->
-              <li data-collapse-toggle="navbar-default">
-                <a href="#" class="block py-2 px-3 text-gray-900 rounded text-white hover:text-blue-500 md:p-0" aria-current="page">Home</a>
-              </li>
-               <!-- item 2 -->
               <li data-collapse-toggle="navbar-default"   aria-expanded="false">
                 <a href="#aboutus" class="block py-2 px-3 text-gray-900 rounded text-white hover:text-blue-500 md:p-0">About us</a>
+              </li>
+              <!-- 2-->
+              <li data-collapse-toggle="navbar-default"   aria-expanded="false">
+                <a href="#partners" class="block py-2 px-3 text-gray-900 rounded text-white hover:text-blue-500 md:p-0">Partners</a>
               </li>
                <!-- item 3 -->
                <li>
@@ -70,7 +56,7 @@
              
                <!-- item 5 -->
                <li data-collapse-toggle="navbar-default"   aria-expanded="false">
-                <a href="#" class="block py-2 px-3 text-gray-900 rounded text-white hover:text-blue-500 md:p-0">questions</a>
+                <a href="#questions" class="block py-2 px-3 text-gray-900 rounded text-white hover:text-blue-500 md:p-0">questions</a>
               </li>
                <!-- item 6 -->
               <li>
@@ -82,7 +68,7 @@
         </div>
       </nav>
       
-          </header>
+    </header>
 
     <!-- home -->
     <div
@@ -101,14 +87,14 @@ votre business
         <p
           class="mb-8 text-lg font-normal desc lg:text-xl sm:px-16 lg:px-48"
         >
-        La digitalisation nous permet de simplifier nos opérations et d'améliorer notre efficacité. En intégrant des outils numériques, nous automatisons les tâches manuelles, réduisons les erreurs humaines et optimisons l'allocation des ressources. Ainsi, nous gagnons du temps, réduisons les coûts et utilisons nos ressources de manière plus judicieuse.
+        La digitalisation optimise nos opérations, réduit les erreurs et les coûts. Gagner du temps et utiliser les ressources efficacement devient possible grâce à elle.
         </p>
         <div
           class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0"
         >
           <a
             href="#contactus"
-            class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 "
+            class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800   "
           >
           CONTACTEZ-NOUS
             <svg
@@ -129,7 +115,7 @@ votre business
           </a>
           <a
             href="#aboutus"
-            class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400"
+            class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100  "
           >
             Lire plus
           </a>
@@ -138,12 +124,12 @@ votre business
     </div>
 
     <!-- about us -->
-    <div class="secondary page-margin" id="aboutus">
-      <h3 class="countainer title text-center text-4xl font-bold tracking-tight text-white sm:text-5xl ">About us</h3>
+    <div class=" page-margin countainer" id="aboutus">
+      <h3 class=" title text-center text-4xl font-bold tracking-tight text-white sm:text-5xl ">About us</h3>
       <section >
 
 
-        <div class="countainer mx-auto  px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 items-start gap-5">
                 <div class="max-w-lg">
                    
@@ -183,141 +169,15 @@ votre business
     </section>
     </div>
 
-    <!-- our services  -->
-    <div class="secondary page-margin" id="services">
-      <h3 class="countainer title text-center text-4xl font-bold tracking-tight text-white sm:text-5xl">Our sevices</h3>
-      <div 
-      class="countainer grid grid-cols-1 md:grid-cols-3 gap-2 py-4 px-4 "
-    >
-      <!-- card 1 -->
-      <div class=" border-black rounded-lg border-[1px] overflow-hidden">
-        
-          <img  src="assets/images/programming.jpg" alt="" />
-     
-        <div class="p-5">
-          <a href="#">
-            <h5
-              class="mb-2 text-2xl font-bold tracking-tight text-main"
-            >
-            Applications Web
-            </h5>
-          </a>
-          <p class="mb-3 font-normal desc ">
-            Gestion de stock, traçabilité, audit et qualité
-          </p>
-          <a
-            href="#"
-            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white  rounded-lg btn  "
-          >
-            Read more
-            <svg
-              class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 14 10"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M1 5h12m0 0L9 1m4 4L9 9"
-              />
-            </svg>
-          </a>
-        </div>
-      </div>
-      <!-- card 2 -->
-      <div class=" border-black rounded-lg border-[1px] overflow-hidden">
-        
-        <img  src="assets/images/iot.jpg" alt="" />
-   
-      <div class="p-5">
-        <a href="#">
-          <h5
-            class="mb-2 text-2xl font-bold tracking-tight text-main"
-          >
-          Internet des objects
-          </h5>
-        </a>
-        <p class="mb-3 font-normal desc ">
-          Connecter vos capteurs et controler vos machines via des applications Webs et mobile.
-        </p>
-        <a
-          href="#"
-          class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white  rounded-lg btn  "
-        >
-          Read more
-          <svg
-            class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 14 10"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M1 5h12m0 0L9 1m4 4L9 9"
-            />
-          </svg>
-        </a>
-      </div>
-    </div>
-      <!-- card 3 -->
-      <div class=" border-black rounded-lg border-[1px] overflow-hidden">
-        
-        <img  src="assets/images/industry.jpg" alt="" />
-   
-      <div class="p-5">
-        <a href="#">
-          <h5
-            class="mb-2 text-2xl font-bold tracking-tight text-main"
-          >
-          Industrie 4.0
-          </h5>
-        </a>
-        <p class="mb-3 font-normal desc ">
-          Rénnover votre usine et digitaliser vos processus indutriels
-        </p>
-        <a
-          href="#"
-          class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white  rounded-lg btn  "
-        >
-          Read more
-          <svg
-            class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 14 10"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M1 5h12m0 0L9 1m4 4L9 9"
-            />
-          </svg>
-        </a>
-      </div>
-    </div>
-    </div>
-    </div>
-    
       <!-- our partenrs  -->
-    <div class="secondary page-margin" id="services">
+    <div class=" page-margin countainer" id="partners">
 
-      <h3 class="countainer title text-center text-4xl font-bold tracking-tight text-white sm:text-5xl">Our Partners</h3>
-      <div class="countainer desc  text-center">
+      <h3 class=" title text-center text-4xl font-bold tracking-tight text-white sm:text-5xl">Our Partners</h3>
+      <div class=" desc  text-center">
         Working together towards a shared goal, we help our  partners to achieve their mission through shared ambition.
       </div>
      
-      <div class="countainer h-[200px] p-4  grid grid-cols-3 gap-2">
+      <div class="h-[200px] pt-3  grid grid-cols-3 gap-2">
           <div class="flex justify-center items-center rounded-md overflow-hidden bg-white ">
             <img class="w-full h-full object-contain" src="assets/images/partenrs/marocpm.png" alt="">
           </div>
@@ -331,21 +191,101 @@ votre business
       </div>
     </div>
 
+    <!-- our services  -->
+    <div class=" page-margin countainer " id="services">
+      <h3 class=" title text-center text-4xl font-bold tracking-tight text-white sm:text-5xl">Our sevices</h3>
+      <div 
+      class=" grid grid-cols-1 md:grid-cols-3 gap-2 py-4 "
+    >
+      <!-- card 1 -->
+      <div class=" border-black rounded-lg border-[1px] overflow-hidden">
+        
+          <img  src="assets/images/programming.jpg" alt="" />
+     
+        <div class="p-5">
+          <a href="#">
+            <h5
+              class="mb-2 text-2xl font-bold tracking-tight text-white"
+            >
+            Applications Web
+            </h5>
+          </a>
+          <p class="mb-3 font-normal desc ">
+            Gestion de stock, traçabilité, audit et qualité
+          </p>
+          
+            <a href="#" class="flex items-center w-fit px-3 py-2 text-sm font-medium text-center text-white  rounded-lg btn">
+              <span class="mr-2">Read more</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+           
+         
+      
+        </div>
+      </div>
+      <!-- card 2 -->
+      <div class=" border-black rounded-lg border-[1px] overflow-hidden">
+        
+        <img  src="assets/images/iot.jpg" alt="" />
+   
+      <div class="p-5">
+        <a href="#">
+          <h5
+            class="mb-2 text-2xl font-bold tracking-tight text-white"
+          >
+          Internet des objects
+          </h5>
+        </a>
+        <p class="mb-3 font-normal desc ">
+          Connecter vos capteurs et controler vos machines via des applications Webs et mobile.
+        </p>
+        <a href="#" class="flex items-center w-fit px-3 py-2 text-sm font-medium text-center text-white  rounded-lg btn">
+          <span class="mr-2">Read more</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+      <!-- card 3 -->
+      <div class=" border-black rounded-lg border-[1px] overflow-hidden">
+        
+        <img  src="assets/images/industry.jpg" alt="" />
+   
+      <div class="p-5">
+        <a href="#">
+          <h5
+            class="mb-2 text-2xl font-bold tracking-tight text-white"
+          >
+          Industrie 4.0
+          </h5>
+        </a>
+        <p class="mb-3 font-normal desc ">
+          Rénnover votre usine et digitaliser vos processus indutriels
+        </p>
+        <a href="#" class="flex items-center w-fit px-3 py-2 text-sm font-medium text-center text-white  rounded-lg btn">
+          <span class="mr-2">Read more</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+    </div>
+    </div>
+    
+     
     <!-- questions -->
-    <div  class="secondary page-margin" id="questions">
+    <div  class=" page-margin countainer " id="questions">
 
 
-      <h3 class="countainer title text-center text-4xl font-bold tracking-tight text-white sm:text-5xl">most asked questions</h3>
+      <h3 class=" title text-center text-4xl font-bold tracking-tight text-white sm:text-5xl">most asked questions</h3>
 
 
-      <div class="countainer grid grid-cols-1 md:grid-cols-10 gap-5">
-        <div class="col-span-5 bg-red-300 flex justify-center items-center rounded-md overflow-hidden">
+      <div class="grid grid-cols-1 md:grid-cols-10 gap-5">
+        <div class="col-span-1 md:col-span-4 bg-red-300 flex justify-center items-center rounded-md overflow-hidden">
           <img class="object-cover h-full w-full" src="assets/images/qanda.jpg" alt="">
         </div>
         
-        <div
+        <div class="col-span-1 md:col-span-6 "
         id="accordion-collapse"
-        class="col-span-5 secondary"
+       
         data-accordion="collapse"
       >
       <!-- item 1 -->
@@ -358,7 +298,7 @@ votre business
               aria-expanded="true"
               aria-controls="accordion-collapse-body-1"
             >
-              <span>What is Flowbite?</span>
+              <span>What Does It Mean to Digitize Your Business? ?</span>
               <svg
                 data-accordion-icon
                 class="w-3 h-3 rotate-180 shrink-0"
@@ -386,16 +326,7 @@ votre business
               class="p-5 border border-b-0 border-gray-200  "
             >
               <p class="mb-2 text-gray-500 ">
-                Flowbite is an open-source library of interactive components built
-                on top of Tailwind CSS including buttons, dropdowns, modals,
-                navbars, and more.
-              </p>
-              <p class="text-gray-500 ">
-                Check out this guide to learn how to
-               
-                >
-                and start developing websites even faster with components on top
-                of Tailwind CSS.
+                In an increasingly technology-focused world, the demand for businesses to digitize has grown dramatically. So, what does it mean to digitize your business? Essentially, it means incorporating technology into your business operations to increase efficiency, enhance customer experience, and boost sales.
               </p>
             </div>
           </div>
@@ -405,12 +336,14 @@ votre business
           <h2 id="accordion-collapse-heading-2">
             <button
               type="button"
-              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 gap-3"
+              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200  gap-3"
               data-accordion-target="#accordion-collapse-body-2"
               aria-expanded="false"
               aria-controls="accordion-collapse-body-2"
             >
-              <span>Is there a Figma file available?</span>
+              <span>
+                Why should you digitize your business?
+              </span>
               <svg
                 data-accordion-icon
                 class="w-3 h-3 rotate-180 shrink-0"
@@ -438,166 +371,105 @@ votre business
               class="p-5 border border-b-0 border-gray-200 "
             >
               <p class="mb-2 text-gray-500 ">
-                Flowbite is first conceptualized and designed using the Figma
-                software so everything you see in the library has a design
-                equivalent in our Figma file.
-              </p>
-              <p class="text-gray-500 ">
-                Check out the
-                <a
-                  href="https://flowbite.com/figma/"
-                  class="text-blue-600  hover:underline"
-                  >Figma design system</a
-                >
-                based on the utility classes from Tailwind CSS and components from
-                Flowbite.
+                The goal of digitizing your business is to keep up with the rapidly changing economy by offering your customers more ways to access your business, cut costs, and streamline daily operations. Therefore, the method(s) you choose to digitize your business can vary based on your startup’s needs.
+              
               </p>
             </div>
           </div>
         </div>
-        <!-- item 3 -->
-        
-        <h2 id="accordion-collapse-heading-3">
-          <button
-            type="button"
-            class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4  gap-3"
-            data-accordion-target="#accordion-collapse-body-3"
-            aria-expanded="false"
-            aria-controls="accordion-collapse-body-3"
-          >
-            <span class="text-start"
-              >What are the differences between Flowbite and Tailwind UI?</span
+        <!-- item 3 --> 
+        <div>
+          <h2 id="accordion-collapse-heading-3">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200   gap-3"
+              data-accordion-target="#accordion-collapse-body-3"
+              aria-expanded="false"
+              aria-controls="accordion-collapse-body-3"
             >
-            <svg
-              data-accordion-icon
-              class="w-3 h-3 rotate-180 shrink-0"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 10 6"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9 5 5 1 1 5"
-              />
-            </svg>
-          </button>
-        </h2>
-        <div
-          id="accordion-collapse-body-3"
-          class="hidden"
-          aria-labelledby="accordion-collapse-heading-3"
-        >
+              <span class="text-start"
+                >
+                What is the Internet of things ?
+                </span
+              >
+              <svg
+                data-accordion-icon
+                class="w-3 h-3 rotate-180 shrink-0"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5 5 1 1 5"
+                />
+              </svg>
+            </button>
+          </h2>
           <div
-            class="p-5 border border-t-0 border-gray-200 "
+            id="accordion-collapse-body-3"
+            class="hidden"
+            aria-labelledby="accordion-collapse-heading-3"
           >
-            <p class="mb-2 text-gray-500 ">
-              The main difference is that the core components from Flowbite are
-              open source under the MIT license, whereas Tailwind UI is a paid
-              product. Another difference is that Flowbite relies on smaller and
-              standalone components, whereas Tailwind UI offers sections of
-              pages.
-            </p>
-            <p class="mb-2 text-gray-500 ">
-              However, we actually recommend using both Flowbite, Flowbite Pro,
-              and even Tailwind UI as there is no technical reason stopping you
-              from using the best of two worlds.
-            </p>
-            <p class="mb-2 text-gray-500 ">
-              Learn more about these technologies:
-             
-            </p>
-            <ul class="ps-5 text-gray-500 list-disc ">
-              <li>
-                <a
-                  href="https://flowbite.com/pro/"
-                  class="text-blue-600 hover:underline"
-                  >Flowbite Pro</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://tailwindui.com/"
-                  rel="nofollow"
-                  class="text-blue-600  hover:underline"
-                  >Tailwind UI</a
-                >
-              </li>
-            </ul>
+            <div
+              class="p-5 border border-t-0 border-gray-200 "
+            >
+              <p class="mb-2 text-gray-500 ">
+           
+                The Internet of Things (IoT) describes a network of physical devices that are embedded with sensors, software, and other technologies. These devices can connect and exchange data with other devices and systems over the Internet or other communication networks
+              </p>
+              
+            </div>
           </div>
         </div>
-        <h2 id="accordion-collapse-heading-4">
-          <button
-            type="button"
-            class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4  gap-3"
-            data-accordion-target="#accordion-collapse-body-4"
-            aria-expanded="false"
-            aria-controls="accordion-collapse-body-4"
-          >
-            <span class="text-start"
-              >What are the differences between Flowbite and Tailwind UI?</span
+        <!-- item 4 -->
+        <div>
+          <h2 id="accordion-collapse-heading-4">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border rounded-b-xl border-gray-200   gap-3 overflow-hidden"
+              data-accordion-target="#accordion-collapse-body-4"
+              aria-expanded="false"
+              aria-controls="accordion-collapse-body-4"
             >
-            <svg
-              data-accordion-icon
-              class="w-3 h-3 rotate-180 shrink-0"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 10 6"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9 5 5 1 1 5"
-              />
-            </svg>
-          </button>
-        </h2>
-        <div
-          id="accordion-collapse-body-4"
-          class="hidden"
-          aria-labelledby="accordion-collapse-heading-4"
-        >
+              <span class="text-start"
+                >What are some examples of IoT devices?</span
+              >
+              <svg
+                data-accordion-icon
+                class="w-3 h-3 rotate-180 shrink-0"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5 5 1 1 5"
+                />
+              </svg>
+            </button>
+          </h2>
           <div
-            class="p-5 border border-b-2 border-gray-200 "
+            id="accordion-collapse-body-4"
+            class="hidden"
+            aria-labelledby="accordion-collapse-heading-4"
           >
-            <p class="mb-2 text-gray-500 ">
-              The main difference is that the core components from Flowbite are
-              open source under the MIT license, whereas Tailwind UI is a paid
-              product. Another difference is that Flowbite relies on smaller and
-              standalone components, whereas Tailwind UI offers sections of
-              pages.
-            </p>
-            <p class="mb-2 text-gray-500 ">
-              However, we actually recommend using both Flowbite, Flowbite Pro,
-              and even Tailwind UI as there is no technical reason stopping you
-              from using the best of two worlds.
-            </p>
-            <p class="mb-2 text-gray-500 ">
-              Learn more about these technologies:
-            </p>
-            <ul class="ps-5 text-gray-500 list-disc ">
-              <li>
-                <a
-                  href="https://flowbite.com/pro/"
-                  class="text-blue-600  hover:underline"
-                  >Flowbite Pro</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://tailwindui.com/"
-                  rel="nofollow"
-                  class="text-blue-600  hover:underline"
-                  >Tailwind UI</a
-                >
-              </li>
-            </ul>
+            <div
+              class="p-5 border border-b-2 border-gray-200 "
+            >
+              <p class="mb-2 text-gray-500 ">
+               
+              </p>
+              Sensors: These are one of the oldest and most common types of IoT devices, used both by individuals and businesses. Some of the most common examples include optical sensors for automatic street lights, temperature sensors for thermostats, and the internal sensors embedded in industrial machinery
+            </div>
           </div>
         </div>
       </div>
@@ -605,9 +477,9 @@ votre business
     </div>
 
       <!-- contact us -->
-   <div  class="secondary page-margin" id="contactus">
-    <h3 class="countainer title text-center text-4xl font-bold   sm:text-5xl text-white ">Contact us</h3>
-    <div class="countainer">
+   <div  class=" page-margin countainer" id="contactus">
+    <h3 class=" title text-center text-4xl font-bold   sm:text-5xl text-white ">Contact us</h3>
+    <div class="">
 
       
           <div class="grid grid-cols-4 gap-6">
@@ -637,7 +509,7 @@ votre business
                   </div>
   
                   <button type="button"
-                          class="mb-6 bg-primary text-white inline-block w-full rounded  px-6 py-2.5 font-medium uppercase leading-normal ">
+                          class="mb-6 btn text-white inline-block w-full rounded  px-6 py-2.5 font-medium uppercase leading-normal ">
                           Send
                   </button>
                  
@@ -649,7 +521,7 @@ votre business
                       <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
                           <div class="flex items-start">
                               <div class="shrink-0">
-                                  <div class="inline-block rounded-md bg-teal-400-100 p-4 text-main">
+                                  <div class="inline-block rounded-md bg-teal-400-100 p-4 text-white">
                                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                           stroke-width="2" stroke="currentColor" class="h-6 w-6">
                                           <path stroke-linecap="round" stroke-linejoin="round"
@@ -658,7 +530,7 @@ votre business
                                   </div>
                               </div>
                               <div class="ml-6 grow">
-                                  <p class="mb-2 font-bold text-main">
+                                  <p class="mb-2 font-bold text-white">
                                       Technical support
                                   </p>
                                   <p class="text-neutral-500 ">
@@ -675,7 +547,7 @@ votre business
                       <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
                           <div class="flex items-start">
                               <div class="shrink-0">
-                                  <div class="inline-block rounded-md bg-teal-400-100 p-4 text-main">
+                                  <div class="inline-block rounded-md bg-teal-400-100 p-4 text-white">
                                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                           stroke-width="2" stroke="currentColor" class="h-6 w-6">
                                           <path stroke-linecap="round" stroke-linejoin="round"
@@ -684,7 +556,7 @@ votre business
                                   </div>
                               </div>
                               <div class="ml-6 grow">
-                                  <p class="mb-2 font-bold text-main ">
+                                  <p class="mb-2 font-bold text-white ">
                                       Sales questions
                                   </p>
                                   <p class="text-neutral-500 ">
@@ -699,7 +571,7 @@ votre business
                       <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
                           <div class="align-start flex">
                               <div class="shrink-0">
-                                  <div class="inline-block rounded-md bg-teal-400-100 p-4 text-main">
+                                  <div class="inline-block rounded-md bg-teal-400-100 p-4 text-white">
                                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                           stroke-width="2" stroke="currentColor" class="h-6 w-6">
                                           <path stroke-linecap="round" stroke-linejoin="round"
@@ -708,7 +580,7 @@ votre business
                                   </div>
                               </div>
                               <div class="ml-6 grow">
-                                  <p class="mb-2 font-bold text-main ">Press</p>
+                                  <p class="mb-2 font-bold text-white ">Press</p>
                                   <p class="text-neutral-500 ">
                                       press@example.com
                                   </p>
@@ -721,7 +593,7 @@ votre business
                       <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
                           <div class="align-start flex">
                               <div class="shrink-0">
-                                  <div class="inline-block rounded-md bg-teal-400-100 p-4 text-main">
+                                  <div class="inline-block rounded-md bg-teal-400-100 p-4 text-white">
                                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                           stroke-width="2" stroke="currentColor" class="h-6 w-6">
                                           <path stroke-linecap="round" stroke-linejoin="round"
@@ -730,7 +602,7 @@ votre business
                                   </div>
                               </div>
                               <div class="ml-6 grow">
-                                  <p class="mb-2 font-bold text-main">
+                                  <p class="mb-2 font-bold text-white">
                                       Bug report
                                   </p>
                                   <p class="text-neutral-500 ">
@@ -751,7 +623,7 @@ votre business
    </div>
 
     <!-- footer -->
-    <footer class="secondary "> 
+    <footer class=" "> 
         <div class="mx-auto max-w-5xl px-4 py-6 sm:px-6 lg:px-8">
           <div class="flex justify-center text-teal-600">
             LoGo
@@ -764,31 +636,34 @@ votre business
       
           <ul class="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
             <li>
-              <a class="text-white transition hover:text-gray-700/75" href="/"> About </a>
+              
+
+
+
+
+              <a class="text-white transition hover:text-gray-700/75" href="#about"> About us </a>
             </li>
       
             <li>
-              <a class="text-white transition hover:text-gray-700/75" href="/"> Careers </a>
+              <a class="text-white transition hover:text-gray-700/75" href="#partners"> Partners </a>
             </li>
       
             <li>
-              <a class="text-white transition hover:text-gray-700/75" href="/"> History </a>
+              <a class="text-white transition hover:text-gray-700/75" href="#services"> Services </a>
             </li>
       
             <li>
-              <a class="text-white transition hover:text-gray-700/75" href="/"> Services </a>
+              <a class="text-white transition hover:text-gray-700/75" href="#questions"> questions </a>
             </li>
       
             <li>
-              <a class="text-white transition hover:text-gray-700/75" href="/"> Projects </a>
+              <a class="text-white transition hover:text-gray-700/75" href="#contactus"> Conatct us </a>
             </li>
       
-            <li>
-              <a class="text-white transition hover:text-gray-700/75" href="/"> Blog </a>
-            </li>
+           
           </ul>
       
-          <ul class="mt-12 flex justify-center gap-6 md:gap-8 text-lg lg:text-xl text-white">
+          <ul class="mt-12 flex justify-center gap-6 md:gap-8  text-white">
            <li class="flex items-center gap-1">
             <a href="http://">
               <i class="fa-brands fa-facebook"></i>
@@ -820,7 +695,9 @@ votre business
    
     <!-- scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
-    </script>
+   
+
+   
     
   </body>
 </html>
