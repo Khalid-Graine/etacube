@@ -18,6 +18,11 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+.home  {
+  background-image: url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg');
+  background-position: center;
+}
 body {
   background-color: #1f2937;
   font-family: 'Poppins', sans-serif;
