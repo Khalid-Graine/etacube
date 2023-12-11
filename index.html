@@ -21,7 +21,7 @@
   </head>
   <body>
   
-    <p class="bg-red-300 text-green-400 py-4 text-center md:bg-yellow-300 lg:bg-blue-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet temporibus saepe quos, perspiciatis qui rerum neque accusamus repellat velit illum?</p>
+   
     <!-- header -->
     <header>
       <nav class="">
@@ -483,12 +483,13 @@ votre business
       <!-- contact us -->
    <div  class=" page-margin my-container" id="contactus">
     <h3 class=" title text-center text-4xl font-bold   sm:text-5xl text-white ">Contact us</h3>
-    <div class="flex justify-center">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
 
       
           
   
-              <form class="w-full md:w-10/12 lg:8/12">
+              <div class="lg:col-span-1">
+                <form class="w-full">
   
                   <div class="mb-3 w-full">
                       <label class="block font-medium mb-[2px] text-white" htmlFor="exampleInput90">
@@ -522,12 +523,46 @@ votre business
                  
   
               </form>
-  
-             
+              </div>
+               <div class="lg:col-span-1">
+                <ul class="text-white grid grid-cols-1 md:grid-cols-3 lg:grid-cols-2 gap-5">
+                  <li class="flex flex-col gap-2  p-4 bg-gray-900 rounded-sm">
+                    <div class="flex w-fit h-fit mx-auto justify-center bg-blue-300 items-center h-10">
+                      <i class="fa-solid fa-phone p-4 border "></i>
+                    </div>
+                    <div class="flex flex-col items-center">
+                      <p class=" text-lg font-medium">Phone</p>
+                      <span>064564537484</span>
+                    </div>
+                  </li>
+                  <li class="flex flex-col gap-2  p-4 bg-gray-900 rounded-sm">
+                    <div class="flex w-fit h-fit mx-auto justify-center bg-blue-300 items-center h-10">
+                      <i class="fa-regular fa-envelope p-4 border"></i>
+                    </div>
+                    <div class="flex flex-col items-center">
+                      <p class=" text-lg font-medium">Email</p>
+                      <span>emailrutu@gmail.com</span>
+                    </div>
+                  </li>
+                  <li class="lg:col-span-2 flex flex-col gap-2  p-4 bg-gray-900 rounded-sm">
+                    <div class="flex w-fit h-fit mx-auto justify-center bg-blue-300 items-center h-10">
+                      <i class="fa-solid fa-map-location-dot p-4 border "></i>
+                    </div>
+                    <div class="flex flex-col items-center">
+                      <p class=" text-lg font-medium">Adress</p>
+                      <span class="text-center">3eme étage Lotissement Othmania, quartier administratif, Béni Mellal</span>
+                    </div>
+                  </li>
+                
+                </ul>
+               </div>
+            
   
         
       
   </div>
+  
+  
    </div>
 
     <!-- footer -->

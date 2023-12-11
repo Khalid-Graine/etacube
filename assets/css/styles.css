@@ -29,6 +29,9 @@ body {
   background-color: #1f2937;
   font-family: 'Poppins', sans-serif;
 }
+.main-color {
+  background-color: #1f2937;
+}
 .btn {
   background-color: blue;
   color: white;
