@@ -36,6 +36,16 @@ body {
   background-color: blue;
   color: white;
 }
+.icon {
+  color: blue;
+  font-size: 26px;
+}
+.bg-card {
+  background-color: rgba(17, 24, 39, 0.38);
+}
+.bg-icon {
+  background-color: rgba(0, 0, 255, 10%);
+}
 .title {
   padding-top: 14px;
   padding-bottom: 18px;
