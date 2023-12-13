@@ -14,7 +14,8 @@
 }
 body {
   background-color: #1f2937;
- 
+  /* background-color: white; */
+  font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
 }
 html {
@@ -25,21 +26,21 @@ html {
   background-image: url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg');
   background-position: center;
 }
-body {
-  background-color: #1f2937;
-  font-family: 'Poppins', sans-serif;
-}
+
 .main-color {
   background-color: #1f2937;
 }
+
 .btn {
   background-color: blue;
   color: white;
 }
+
 .icon {
   color: blue;
   font-size: 26px;
 }
+
 .bg-card {
   background-color: rgba(17, 24, 39, 0.38);
 }
