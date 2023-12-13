@@ -26,20 +26,64 @@
     />
   </head>
   <body>
-
     <!-- Start Button Up -->
-    <button id="scrollToTopBtn" 
-    class="w-10 h-10 flex justify-center items-center rounded-full bg-blue-500 fixed bottom-1 -right-36 transition-all ease-linear duration-500 bg-icon"
+    <button
+      id="scrollToTopBtn"
+      class="w-10 h-10 flex justify-center items-center rounded-full bg-blue-500 fixed bottom-1 -right-36 transition-all ease-linear duration-500 bg-icon"
     >
-    <i class="fa-solid fa-arrow-up text-white text-lg "></i>
-  </button>
+      <i class="fa-solid fa-arrow-up text-white text-lg"></i>
+    </button>
     <!-- End Button Up -->
 
-    <!-- header -->
+    <!-- Start the top bar -->
+    <div class="hidden lg:flex justify-end items-center bg-blue-600 h-16 px-4">
+      
+      <div class="flex justify-center items-center gap-10">
+        <div class="flex gap-2">
+          <div
+            class="w-6 h-6 rounded-full bg- flex justify-center items-center"
+          >
+          <i class="fa-solid fa-envelope text-[#fff] text-2xl"></i>
+            
+          </div>
+          <p class="text-[#fff]">contact.etacube@gmail.com</p>
+        </div>
+        <div class="flex gap-2">
+          <div
+            class="w-6 h-6 rounded-full bg- flex justify-center items-center"
+          >
+            <i class="fa-solid fa-phone text-[#fff] text-2xl"></i>
+          </div>
+          <p class="text-[#fff]">+2126 55 96 60 27</p>
+        </div>
+        <ul class="flex gap-3">
+          <li class="w-6 h-6 rounded-full  p-2 flex justify-center items-center">
+            <a href="http://">
+              <i class="fa-brands fa-facebook text-[#fff] text-2xl"></i>
+            </a>
+          </li>
+          <li class="w-6 h-6 rounded-full bg- flex justify-center items-center">
+            <a href="http://">
+              <i class="fa-brands fa-linkedin text-[#fff] text-2xl"></i>
+            </a>
+          </li>
+
+          <li class="w-6 h-6 rounded-full bg- flex justify-center items-center">
+            <a href="http://">
+              <i class="fa-brands fa-youtube text-[#fff] text-2xl"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- End the top bar -->
+
+
+    <!-- Start header -->
     <header>
       <nav class="">
         <div
-          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-5"
         >
           <div class="flex items-center space-x-3 rtl:space-x-reverse">
             <img
@@ -127,8 +171,9 @@
         </div>
       </nav>
     </header>
+    <!-- End header -->
 
-    <!-- home -->
+    <!-- Start home -->
     <div class="bg-center home bg-no-repeat bg-gray-700 bg-blend-multiply">
       <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
         <h1
@@ -174,8 +219,9 @@
         </div>
       </div>
     </div>
+    <!-- End home -->
 
-    <!-- about us -->
+    <!-- Start about us -->
     <div class="page-margin my-container" id="aboutus">
       <h3
         class="title text-center text-4xl font-bold tracking-tight text-white sm:text-5xl"
@@ -230,8 +276,9 @@
         </div>
       </section>
     </div>
+    <!-- End about us -->
 
-    <!-- our partenrs  -->
+    <!-- Start our partenrs  -->
     <div class="page-margin my-container" id="partners">
       <h3
         class="title text-center text-4xl font-bold tracking-tight text-white sm:text-5xl"
@@ -269,8 +316,9 @@
         </div>
       </div>
     </div>
+    <!-- End our partenrs  -->
 
-    <!-- our services  -->
+    <!-- Start our services  -->
     <div class="page-margin my-container" id="services">
       <h3
         class="title text-center text-4xl font-bold tracking-tight text-white sm:text-5xl"
@@ -348,8 +396,9 @@
         </div>
       </div>
     </div>
+    <!-- End our services  -->
 
-    <!-- questions -->
+    <!-- Start questions -->
     <div class="page-margin my-container" id="questions">
       <h3
         class="title text-center text-4xl font-bold tracking-tight text-white sm:text-5xl"
@@ -562,8 +611,9 @@
         </div>
       </div>
     </div>
+    <!-- End questions -->
 
-    <!-- contact us -->
+    <!-- Start contact us -->
     <div class="page-margin my-container" id="contactus">
       <h3 class="title text-center text-4xl font-bold sm:text-5xl text-white">
         Contact us
@@ -627,38 +677,36 @@
           <ul
             class="text-white grid grid-cols-1 md:grid-cols-3 lg:grid-cols-2 gap-5"
           >
-            <li class="flex flex-col gap-2 p-4 bg-card  rounded-sm">
+            <li class="flex flex-col gap-2 p-4 bg-card rounded-sm">
               <div
-                class="flex w-14 h-14  mx-auto flex justify-center  items-center bg-icon"
+                class="flex w-14 h-14 mx-auto flex justify-center items-center bg-icon"
               >
-                <i class="fa-solid fa-phone icon "></i>
+                <i class="fa-solid fa-phone icon"></i>
               </div>
-              
+
               <div class="flex flex-col items-center">
                 <p class="text-lg font-medium">Phone</p>
                 <span>064564537484</span>
               </div>
             </li>
 
-            <li class="flex flex-col gap-2 p-4  rounded-sm bg-card">
+            <li class="flex flex-col gap-2 p-4 rounded-sm bg-card">
               <div
-                class="flex w-14 h-14  mx-auto flex justify-center  items-center bg-icon"
+                class="flex w-14 h-14 mx-auto flex justify-center items-center bg-icon"
               >
                 <i class="fa-regular fa-envelope icon"></i>
               </div>
               <div class="flex flex-col items-center">
                 <p class="text-lg font-medium">Email</p>
-                <span>emailrutu@gmail.com</span>
+                <span>contact.etacube@gmail.com</span>
               </div>
             </li>
-            
+
             <li
-            
-              class="lg:col-span-2 flex flex-col gap-2 p-4  rounded-sm bg-card"
+              class="lg:col-span-2 flex flex-col gap-2 p-4 rounded-sm bg-card"
             >
               <div
-              
-                class="flex w-14 h-14 mx-auto flex justify-center  items-center rounded-sm bg-icon "
+                class="flex w-14 h-14 mx-auto flex justify-center items-center rounded-sm bg-icon"
               >
                 <i class="fa-solid fa-map-location-dot icon"></i>
               </div>
@@ -670,23 +718,24 @@
                 >
               </div>
             </li>
-
           </ul>
         </div>
       </div>
     </div>
+    <!-- End contact us -->
 
-    <!-- rights -->
+    <!-- Start rights -->
     <div class="text-center text-sm py-1 text-white bg-[#334158]">
       ETACUBE TECH 2022. All Rights Reserved.
     </div>
-    <!-- footer -->
+    <!-- End rights -->
+
+    <!-- Start footer -->
     <footer class="w-full bg-red-100 w-full h-10">
-
-
       <ul></ul>
     </footer>
-    
+    <!-- End footer -->
+
     <!-- Start scripts -->
     <!-- Button up -->
     <script src="assets/js/main.js"></script>
