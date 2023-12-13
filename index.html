@@ -26,6 +26,21 @@
     />
   </head>
   <body>
+    <!--  -->
+    <div id="loading-container" class="w-full main-color h-screen fixed top-0 right-0  flex justify-center items-center">
+
+      <div
+      class="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent border-white align-[-0.125em] text-primary motion-reduce:animate-[spin_1.5s_linear_infinite]"
+      role="status">
+      <span
+        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+        >Loading...</span
+      >
+    </div>
+
+    </div>
+   
+    
     <!-- Start Button Up -->
     <button
       id="scrollToTopBtn"
@@ -87,7 +102,7 @@
         >
           <div class="flex items-center space-x-3 rtl:space-x-reverse">
             <img
-              src="https://flowbite.com/docs/images/logo.svg"
+              src="./assets/images/logo.png"
               class="h-8"
               alt="Flowbite Logo"
             />
@@ -722,8 +737,26 @@
         </div>
       </div>
     </div>
+    
     <!-- End contact us -->
+    
 
+    <!-- Start location map -->
+    <div class="page-margin my-container" id="contactus">
+      <h3 class="title text-center text-4xl font-bold sm:text-5xl text-white">
+        Our location map
+      </h3>
+      
+        
+        <div class="px-1 lg:px-16 ">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d22964.715599194282!2d-6.378748969642457!3d32.322713533566485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0xda3870432a29e2b%3A0xb775c48eeba763b8!2s3eme%20%C3%A9tage%2C%20Lotissement%20Othmania%2C%20quartier%20administratif%2C%20Beni-Mellal%2023000!3m2!1d32.3327609!2d-6.3606539!5e0!3m2!1sen!2sma!4v1702467318744!5m2!1sen!2sma"
+          
+          class="w-full h-screen"
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      
+    </div>
+    <!-- End location map -->
     
 
     <!-- Start footer -->

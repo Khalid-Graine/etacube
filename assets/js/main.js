@@ -26,13 +26,17 @@ document.addEventListener('DOMContentLoaded', function() {
     window.scrollTo({top: 0, behavior: 'smooth'});
     });
   
-    function scrollToTop() {
-      var currentPosition = document.documentElement.scrollTop || document.body.scrollTop;
-  
-      if (currentPosition > 0) {
-        window.requestAnimationFrame(scrollToTop);
-        window.scrollTo(0, currentPosition - currentPosition / 8);
-      }
-    }
+    
   });
+
+
+// loading feature
+document.addEventListener("DOMContentLoaded", function() {
+  // Hide the loading container
+  document.getElementById("loading-container").style.display = "none";
+
+  // Show the map container
+  document.getElementById("map-container").style.display = "block";
+});
+
   
