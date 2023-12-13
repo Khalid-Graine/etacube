@@ -11,11 +11,11 @@ document.addEventListener('DOMContentLoaded', function() {
     function scrollFunction() {
     let heightScreen = window.innerHeight
       if (document.body.scrollTop > heightScreen || document.documentElement.scrollTop > heightScreen) {
-        scrollToTopBtn.classList.add('right-2')
+        scrollToTopBtn.classList.add('right-6')
         scrollToTopBtn.classList.remove('-right-36')
       } else {
       
-        scrollToTopBtn.classList.remove('right-2')
+        scrollToTopBtn.classList.remove('right-6')
         scrollToTopBtn.classList.add('-right-36')
       }
     }
