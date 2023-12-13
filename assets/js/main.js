@@ -1,23 +1,29 @@
 document.addEventListener('DOMContentLoaded', function() {
+
     // Get the button
     var scrollToTopBtn = document.getElementById('scrollToTopBtn');
   
-    // When the user scrolls down 20px from the top of the document, show the button
+    // show the button
     window.onscroll = function() {
       scrollFunction();
     };
   
     function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        scrollToTopBtn.style.display = 'block';
+    let heightScreen = window.innerHeight
+      if (document.body.scrollTop > heightScreen || document.documentElement.scrollTop > heightScreen) {
+        scrollToTopBtn.classList.add('right-2')
+        scrollToTopBtn.classList.remove('-right-36')
       } else {
-        scrollToTopBtn.style.display = 'none';
+      
+        scrollToTopBtn.classList.remove('right-2')
+        scrollToTopBtn.classList.add('-right-36')
       }
     }
   
     // When the user clicks on the button, scroll to the top of the document
     scrollToTopBtn.addEventListener('click', function() {
-      scrollToTop();
+    //   scrollToTop();
+    window.scrollTo({top: 0, behavior: 'smooth'});
     });
   
     function scrollToTop() {
