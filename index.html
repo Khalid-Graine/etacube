@@ -45,14 +45,14 @@
     <!-- Start Button Up -->
     <button
       id="scrollToTopBtn"
-      class="w-10 h-10 flex justify-center items-center rounded-full bg-blue-500 fixed bottom-6 -right-36 transition-all ease-linear duration-500 bg-icon"
+      class="btn w-10 h-10 flex justify-center items-center rounded-full  fixed bottom-6 -right-36 transition-all ease-linear duration-500 "
     >
-      <i class="fa-solid fa-arrow-up text-white text-lg"></i>
+      <i class="fa-solid fa-arrow-up  text-lg"></i>
     </button>
     <!-- End Button Up -->
 
     <!-- Start the top bar -->
-    <div class="hidden lg:flex justify-end items-center bg-blue-600 h-16 px-4">
+    <div class="hidden primary lg:flex justify-end items-center  h-16 px-4">
       
       <div class="flex justify-center items-center gap-10">
         <div class="flex gap-2">
@@ -96,108 +96,108 @@
 
 
     <!-- Start header -->
-    <header>
-      <nav class="">
-        <div
-          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-5"
+<header class="header">
+  <nav class="">
+    <div
+      class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-5"
+    >
+      <div class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img
+          src="./assets/images/logo.png"
+          class="h-8"
+          alt="Flowbite Logo"
+        />
+        <span
+          class="self-center  text-2xl font-semibold whitespace-nowrap"
+          >Etacube</span
         >
-          <div class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img
-              src="./assets/images/logo.png"
-              class="h-8"
-              alt="Flowbite Logo"
-            />
-            <span
-              class="self-center text-white text-2xl font-semibold whitespace-nowrap"
-              >Etacube</span
-            >
-          </div>
+      </div>
 
-          <button
-            data-collapse-toggle="navbar-default"
-            type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden"
-            aria-controls="navbar-default"
-            aria-expanded="false"
-          >
-            <span class="sr-only">Open main menu</span>
-            <svg
-              class="w-5 h-5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 17 14"
+      <button
+        data-collapse-toggle="navbar-default"
+        type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm desc rounded-lg md:hidden"
+        aria-controls="navbar-default"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Open main menu</span>
+        <svg
+          class="w-5 h-5"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 17 14"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15"
+          />
+        </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul
+          class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0"
+        >
+          <!-- item 1 -->
+          <li data-collapse-toggle="navbar-default" aria-expanded="false">
+            <a
+              href="#aboutus"
+              class="block py-2 px-3 rounded  hoverLinks md:p-0"
+              >About us</a
             >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M1 1h15M1 7h15M1 13h15"
-              />
-            </svg>
-          </button>
-          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-            <ul
-              class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0"
+          </li>
+          <!-- 2-->
+          <li data-collapse-toggle="navbar-default" aria-expanded="false">
+            <a
+              href="#partners"
+              class="block py-2 px-3 rounded  hoverLinks md:p-0"
+              >Partners</a
             >
-              <!-- item 1 -->
-              <li data-collapse-toggle="navbar-default" aria-expanded="false">
-                <a
-                  href="#aboutus"
-                  class="block py-2 px-3 rounded text-white hover:text-blue-500 md:p-0"
-                  >About us</a
-                >
-              </li>
-              <!-- 2-->
-              <li data-collapse-toggle="navbar-default" aria-expanded="false">
-                <a
-                  href="#partners"
-                  class="block py-2 px-3 rounded text-white hover:text-blue-500 md:p-0"
-                  >Partners</a
-                >
-              </li>
-              <!-- item 3 -->
-              <li>
-                <a
-                  href="#services"
-                  class="block py-2 px-3 rounded text-white hover:text-blue-500 md:p-0"
-                  >Services</a
-                >
-              </li>
+          </li>
+          <!-- item 3 -->
+          <li>
+            <a
+              href="#services"
+              class="block py-2 px-3 rounded  hoverLinks md:p-0"
+              >Services</a
+            >
+          </li>
 
-              <!-- item 5 -->
-              <li data-collapse-toggle="navbar-default" aria-expanded="false">
-                <a
-                  href="#questions"
-                  class="block py-2 px-3 rounded text-white hover:text-blue-500 md:p-0"
-                  >questions</a
-                >
-              </li>
-              <!-- item 6 -->
-              <li>
-                <a
-                  href="#contactus"
-                  class="block py-2 px-3 rounded text-white hover:text-blue-500 md:p-0"
-                  >contact us</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!-- End header -->
+          <!-- item 5 -->
+          <li data-collapse-toggle="navbar-default" aria-expanded="false">
+            <a
+              href="#questions"
+              class="block py-2 px-3 rounded  hoverLinks md:p-0"
+              >questions</a
+            >
+          </li>
+          <!-- item 6 -->
+          <li>
+            <a
+              href="#contactus"
+              class="block py-2 px-3 rounded  hoverLinks md:p-0"
+              >contact us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<!-- End header -->
 
     <!-- Start home -->
-    <div class="bg-center home bg-no-repeat bg-gray-700 bg-blend-multiply">
+    <div class="bg-center home bg-no-repeat bg-gray-300 bg-blend-multiply">
       <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
         <h1
           class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl"
         >
         Digitize your business
         </h1>
-        <p class="mb-8 text-lg font-normal desc lg:text-xl sm:px-16 lg:px-48">
+        <p class="mb-8 text-lg font-normal intro lg:text-xl sm:px-16 lg:px-48">
           The digitalization optimizes our operations, removes errors and costs. Gagner du temps and use les resources as effective as possible grace elle.
         </p>
         <div
@@ -205,7 +205,7 @@
         >
           <a
             href="#contactus"
-            class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800"
+            class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg primary"
           >
             CONTACT US
             <svg
@@ -226,7 +226,7 @@
           </a>
           <a
             href="#aboutus"
-            class="inline-flex justify-center hover: items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white"
+            class="justify-center intro hover: items-center py-3 px-5 sm:mx-4 text-base font-medium text-center  rounded-lg border border-white"
           >
             Read more
           </a>
@@ -236,9 +236,9 @@
     <!-- End home -->
 
     <!-- Start about us -->
-    <div class="page-margin my-container" id="aboutus">
+    <div class="page-margin my-container secondary-bg" id="aboutus">
       <h3
-        class="title text-center text-4xl font-bold tracking-tight text-white sm:text-5xl"
+        class="title   sm:text-5xl"
       >
         About us
       </h3>
@@ -295,7 +295,7 @@
     <!-- Start our partenrs  -->
     <div class="page-margin my-container" id="partners">
       <h3
-        class="title text-center text-4xl font-bold tracking-tight text-white sm:text-5xl"
+        class="title   sm:text-5xl"
       >
         Our Partners
       </h3>
@@ -333,20 +333,20 @@
     <!-- End our partenrs  -->
 
     <!-- Start our services  -->
-    <div class="page-margin my-container" id="services">
+    <div class="page-margin my-container secondary-bg" id="services">
       <h3
-        class="title text-center text-4xl font-bold tracking-tight text-white sm:text-5xl"
+        class="title   sm:text-5xl"
       >
         Our sevices
       </h3>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-2 py-4">
         <!-- card 1 -->
-        <div class="border-black rounded-lg border-[1px] overflow-hidden">
+        <div class="border-black rounded-lg border-[1px] overflow-hidden service-card">
           <img src="../assets/images/programming.jpg" alt="image" />
 
           <div class="p-5">
             <a href="#">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight main-text">
                 Applications Web
               </h5>
             </a>
@@ -356,7 +356,7 @@
 
             <a
               href="#"
-              class="flex items-center w-fit px-3 py-2 text-sm font-medium text-center text-white rounded-lg btn"
+              class="btn flex items-center w-fit px-3 py-2 text-sm font-medium text-center  rounded-lg "
             >
               <span class="mr-2">Read more</span>
               <i class="fa-solid fa-arrow-right"></i>
@@ -364,12 +364,12 @@
           </div>
         </div>
         <!-- card 2 -->
-        <div class="border-black rounded-lg border-[1px] overflow-hidden">
+        <div class="border-black rounded-lg border-[1px] overflow-hidden service-card">
           <img src="../assets/images/iot.jpg" alt="image" />
 
           <div class="p-5">
             <a href="#">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight main-text">
                 Internet des objects
               </h5>
             </a>
@@ -379,7 +379,7 @@
             </p>
             <a
               href="#"
-              class="flex items-center w-fit px-3 py-2 text-sm font-medium text-center text-white rounded-lg btn"
+              class="btn flex items-center w-fit px-3 py-2 text-sm font-medium text-center  rounded-lg "
             >
               <span class="mr-2">Read more</span>
               <i class="fa-solid fa-arrow-right"></i>
@@ -387,12 +387,12 @@
           </div>
         </div>
         <!-- card 3 -->
-        <div class="border-black rounded-lg border-[1px] overflow-hidden">
+        <div class="border-black rounded-lg border-[1px] overflow-hidden service-card">
           <img src="../assets/images/industry.jpg" alt="image" />
 
           <div class="p-5">
             <a href="#">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight main-text">
                 Industrie 4.0
               </h5>
             </a>
@@ -401,7 +401,7 @@
             </p>
             <a
               href="#"
-              class="flex items-center w-fit px-3 py-2 text-sm font-medium text-center text-white rounded-lg btn"
+              class="btn flex items-center w-fit px-3 py-2 text-sm font-medium text-center  rounded-lg "
             >
               <span class="mr-2">Read more</span>
               <i class="fa-solid fa-arrow-right"></i>
@@ -415,7 +415,7 @@
     <!-- Start questions -->
     <div class="page-margin my-container" id="questions">
       <h3
-        class="title text-center text-4xl font-bold tracking-tight text-white sm:text-5xl"
+        class="title   sm:text-5xl"
       >
         most asked questions
       </h3>
@@ -442,7 +442,7 @@
             <h2 id="accordion-collapse-heading-1">
               <button
                 type="button"
-                class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl gap-3"
+                class="flex items-center justify-between w-full p-5 font-medium rtl:text-right desc border border-b-0 border-gray-200 rounded-t-xl gap-3"
                 data-accordion-target="#accordion-collapse-body-1"
                 aria-expanded="true"
                 aria-controls="accordion-collapse-body-1"
@@ -472,7 +472,7 @@
               aria-labelledby="accordion-collapse-heading-1"
             >
               <div class="p-5 border border-b-0 border-gray-200">
-                <p class="mb-2 text-gray-500">
+                <p class="mb-2 desc">
                   In an increasingly technology-focused world, the demand for
                   businesses to digitize has grown dramatically. So, what does
                   it mean to digitize your business? Essentially, it means
@@ -488,7 +488,7 @@
             <h2 id="accordion-collapse-heading-2">
               <button
                 type="button"
-                class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 gap-3"
+                class="flex items-center justify-between w-full p-5 font-medium rtl:text-right desc border border-b-0 border-gray-200 gap-3"
                 data-accordion-target="#accordion-collapse-body-2"
                 aria-expanded="false"
                 aria-controls="accordion-collapse-body-2"
@@ -518,7 +518,7 @@
               aria-labelledby="accordion-collapse-heading-2"
             >
               <div class="p-5 border border-b-0 border-gray-200">
-                <p class="mb-2 text-gray-500">
+                <p class="mb-2 desc">
                   The goal of digitizing your business is to keep up with the
                   rapidly changing economy by offering your customers more ways
                   to access your business, cut costs, and streamline daily
@@ -533,7 +533,7 @@
             <h2 id="accordion-collapse-heading-3">
               <button
                 type="button"
-                class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 gap-3"
+                class="flex items-center justify-between w-full p-5 font-medium rtl:text-right desc border border-gray-200 gap-3"
                 data-accordion-target="#accordion-collapse-body-3"
                 aria-expanded="false"
                 aria-controls="accordion-collapse-body-3"
@@ -565,7 +565,7 @@
               aria-labelledby="accordion-collapse-heading-3"
             >
               <div class="p-5 border border-t-0 border-gray-200">
-                <p class="mb-2 text-gray-500">
+                <p class="mb-2 desc">
                   The Internet of Things (IoT) describes a network of physical
                   devices that are embedded with sensors, software, and other
                   technologies. These devices can connect and exchange data with
@@ -580,7 +580,7 @@
             <h2 id="accordion-collapse-heading-4">
               <button
                 type="button"
-                class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border rounded-b-xl border-gray-200 gap-3 overflow-hidden"
+                class="flex items-center justify-between w-full p-5 font-medium rtl:text-right desc border rounded-b-xl border-gray-200 gap-3 overflow-hidden"
                 data-accordion-target="#accordion-collapse-body-4"
                 aria-expanded="false"
                 aria-controls="accordion-collapse-body-4"
@@ -612,7 +612,7 @@
               aria-labelledby="accordion-collapse-heading-4"
             >
               <div class="p-5 border border-b-2 border-gray-200">
-                <p class="mb-2 text-gray-500">
+                <p class="mb-2 desc">
                   Sensors: These are one of the oldest and most common types of
                   IoT devices, used both by individuals and businesses. Some of
                   the most common examples include optical sensors for automatic
@@ -628,8 +628,8 @@
     <!-- End questions -->
 
     <!-- Start contact us -->
-    <div class="page-margin my-container" id="contactus">
-      <h3 class="title text-center text-4xl font-bold sm:text-5xl text-white">
+    <div class="page-margin my-container secondary-bg" id="contactus">
+      <h3 class="title   sm:text-5xl">
         Contact us
       </h3>
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
@@ -637,7 +637,7 @@
           <form class="w-full">
             <div class="mb-3 w-full">
               <label
-                class="block font-medium mb-[2px] text-white"
+                class="block font-medium mb-[2px] "
                 htmlFor="exampleInput90"
               >
                 Name
@@ -649,10 +649,10 @@
                 placeholder="Name"
               />
             </div>
-
+  
             <div class="mb-3 w-full">
               <label
-                class="block font-medium mb-[2px] text-white"
+                class="block font-medium mb-[2px] "
                 htmlFor="exampleInput90"
               >
                 Email
@@ -664,10 +664,10 @@
                 placeholder="Enter your email address"
               />
             </div>
-
+  
             <div class="mb-3 w-full">
               <label
-                class="block font-medium mb-[2px] text-white"
+                class="block font-medium mb-[2px] "
                 htmlFor="exampleInput90"
               >
                 Message
@@ -678,49 +678,45 @@
                 id=""
               ></textarea>
             </div>
-
-            <button
-              type="button"
-              class="mb-6 bg-blue-500 hover:bg-blue-400 text-white inline-block w-full rounded px-6 py-2.5 font-medium uppercase leading-normal"
-            >
-              Send
-            </button>
+  
+           
+            <button class="btn uppercase w-full py-2 rounded-md font-semibold">Send</button>
           </form>
         </div>
         <div class="lg:col-span-1">
           <ul
-            class="text-white grid grid-cols-1 md:grid-cols-3 lg:grid-cols-2 gap-5"
+            class=" grid grid-cols-1 md:grid-cols-3 lg:grid-cols-2 gap-5"
           >
-            <li class="flex flex-col gap-2 p-4 bg-card rounded-sm">
+            <li class="flex flex-col gap-2 p-4 bg-card rounded-md">
               <div
-                class="flex w-14 h-14 mx-auto flex justify-center items-center bg-icon"
+                class="flex w-14 h-14 mx-auto flex justify-center items-center rounded-md bg-icon"
               >
                 <i class="fa-solid fa-phone icon"></i>
               </div>
-
+  
               <div class="flex flex-col items-center">
                 <p class="text-lg font-medium">Phone</p>
                 <span>064564537484</span>
               </div>
             </li>
-
-            <li class="flex flex-col gap-2 p-4 rounded-sm bg-card">
+  
+            <li class="flex flex-col gap-2 p-4 rounded-md bg-card">
               <div
-                class="flex w-14 h-14 mx-auto flex justify-center items-center bg-icon"
+                class="flex w-14 h-14 mx-auto flex justify-center items-center rounded-md bg-icon"
               >
-                <i class="fa-regular fa-envelope icon"></i>
+                <i class="fa-regular fa-envelope  icon"></i>
               </div>
               <div class="flex flex-col items-center">
                 <p class="text-lg font-medium">Email</p>
                 <span>contact.etacube@gmail.com</span>
               </div>
             </li>
-
+  
             <li
-              class="lg:col-span-2 flex flex-col gap-2 p-4 rounded-sm bg-card"
+              class="lg:col-span-2 flex flex-col gap-2 p-4 rounded-md bg-card"
             >
               <div
-                class="flex w-14 h-14 mx-auto flex justify-center items-center rounded-sm bg-icon"
+                class="flex w-14 h-14 mx-auto flex justify-center items-center rounded-md bg-icon"
               >
                 <i class="fa-solid fa-map-location-dot icon"></i>
               </div>
@@ -741,9 +737,9 @@
     
 
     <!-- Start location map -->
-    <div class="page-margin my-container" id="contactus">
-      <h3 class="title text-center text-4xl font-bold sm:text-5xl text-white">
-        Our location map
+    <div class="page-margin my-container " id="contactus">
+      <h3 class="title   sm:text-5xl">
+        - Our location map -
       </h3>
       
         
@@ -758,33 +754,12 @@
     <!-- End location map -->
     
 
-    <!-- start SOCIAL MEDIA -->
-    <div class="my-container mt-6">
-      <ul class="flex justify-evenly items-center ">
-        <li class="w-6 h-6 rounded-full  p-2 flex justify-center items-center ">
-          <a href="https://www.facebook.com/ETACUBE" target="_blank">
-            <i class="fa-brands fa-facebook text-[#fff] text-2xl"></i>
-          </a>
-        </li>
-        <li class="w-6 h-6 rounded-full bg- flex justify-center items-center">
-          <a href="https://www.linkedin.com/company/etacube-tech/" target="_blank">
-            <i class="fa-brands fa-linkedin text-[#fff] text-2xl"></i>
-          </a>
-        </li>
-
-        <li class="w-6 h-6 rounded-full bg- flex justify-center items-center">
-          <a href="https://www.youtube.com/@etacubetech" target="_blank">
-            <i class="fa-brands fa-youtube text-[#fff] text-2xl"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <!-- end social media -->
+ 
      
 
 
     <!-- Start footer -->
-    <footer class="pt-6 pb-6 mt-10 border-t border-gray-200">
+    <footer class="pt-6 pb-6 mt-10 border-t border-gray-200 secondary-bg">
       <div class="my-container flex justify-between items-center h-16">
         <div>logo</div>
         <div class="desc text-sm"> Copyright &copy; 2023. All rights reserved.</div>
