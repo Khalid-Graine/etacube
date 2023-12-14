@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-
+  setMap();
     // Get the button
     var scrollToTopBtn = document.getElementById('scrollToTopBtn');
   
@@ -28,16 +28,28 @@ document.addEventListener('DOMContentLoaded', function() {
   
     
   });
+   function setMap() {
+    var loadingContainer = document.getElementById("loading-container");
+  var mapContainer = document.getElementById("map-container");
 
+  // Check if elements exist before accessing properties
+  if (loadingContainer) {
+    loadingContainer.style.display = "none";
+  }
 
-// loading feature
-document.addEventListener("DOMContentLoaded", function() {
-  // Hide the loading container
-  document.getElementById("loading-container").style.display = "none";
+  if (mapContainer) {
+    mapContainer.style.display = "block";
+  }
+   }
 
-  // Show the map container
-  document.getElementById("map-container").style.display = "block";
-});
+// // loading feature
+// document.addEventListener("DOMContentLoaded", function() {
+//   // Hide the loading container
+//   document.getElementById("loading-container").style.display = "none";
+
+//   // Show the map container
+//   document.getElementById("map-container").style.display = "block";
+// });
 
 
   

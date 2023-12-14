@@ -1,25 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
 
-
-
-:root {
-  --small-margin: 10px;
-  --main-color: yellow;
-  --primary-color: #da373d;
-  --secondary-color: #1f2937;
+html {
+  scroll-behavior: smooth;
 }
 body {
   background-color: #1f2937;
-  /* background-color: white; */
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
-}
-html {
-  scroll-behavior: smooth;
 }
 
 .home  {
@@ -42,7 +30,7 @@ html {
 }
 
 .bg-card {
-  background-color: rgba(17, 24, 39, 0.38);
+  background-color: rgba(17, 24, 39, 0.98);
 }
 .bg-icon {
   background-color: rgba(0, 0, 255, 10%);
@@ -57,7 +45,6 @@ html {
 }
 .desc {
   color: #d2d5dbe8;
-  /* color: red; */
 }
 .card-background {
   background-color: rgb(55 65 81);
