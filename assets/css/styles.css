@@ -1,105 +1,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 
-<<<<<<< HEAD
-
-
-:root {
-  --space: 50px;
-  /* --main-color: #1f2937; */
-  --main-color: white;
-  --primary-color: midnightblue;
-  --secondary-color: rgb(107 114 128);
-  --tertiary-color: black;
-  --second-bg-color: whitesmoke;
-}
-.intro {
-  color: var(--second-bg-color);
-}
-.header {
-  background-color: var(--second-bg-color);
-}
-.service-card {
-  background-color: var(--main-color) ;
-  cursor: pointer;
-}
-.service-card:hover {
-  background-color: var(--second-bg-color);
-}
-.secondary-bg {
-  background-color: var(--second-bg-color);
-}
-body {
-  background-color: var(--main-color);
-  /* background-color: white; */
-=======
 html {
   scroll-behavior: smooth;
 }
 body {
   background-color: #1f2937;
->>>>>>> origin/primary
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
 }
 
 .home  {
-  background-image: url('/assets/images/conference.jpg');
+  background-image: url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg');
   background-position: center;
-  background-size: cover;
 }
 
 .main-color {
   background-color: #1f2937;
 }
-.primary {
-  background-color: var(--primary-color);
-}
-.hoverLinks:hover {
-  color: var(--primary-color);
-  transform: translateY(-2px);
-}
+
 .btn {
-  background-color: var(--primary-color);
+  background-color: blue;
   color: white;
 }
 
 .icon {
-  color: var(--primary-color);
+  color: blue;
   font-size: 26px;
 }
 
 .bg-card {
-<<<<<<< HEAD
-  background-color: var(--main-color);
-=======
   background-color: rgba(17, 24, 39, 0.98);
->>>>>>> origin/primary
 }
 .bg-icon {
   background-color: rgba(0, 0, 255, 10%);
 }
 .title {
-  color: var(--tertiary-color);
   padding-top: 14px;
-  padding-bottom: 22px;
-  text-align: center;
-}
-.main-text {
-  color: var(--tertiary-color);
+  padding-bottom: 18px;
 }
 .page-margin {
-  padding-top: var(--space) ;
-  padding-bottom: var(--space) ;
+  margin-top: 90px ;
+  margin-bottom: 0px ;
 }
 .desc {
-<<<<<<< HEAD
-  /* color: #d2d5dbe8; */
-  color: var(--secondary-color);
-  /* color: red; */
-=======
   color: #d2d5dbe8;
->>>>>>> origin/primary
 }
 .card-background {
   background-color: rgb(55 65 81);
@@ -131,4 +76,3 @@ body {
   padding-left: 30px;
   }
 }
-
