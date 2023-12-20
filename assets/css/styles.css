@@ -1,9 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
 
+<<<<<<< HEAD
 
 
 :root {
@@ -34,11 +32,15 @@
 body {
   background-color: var(--main-color);
   /* background-color: white; */
-  font-family: 'Poppins', sans-serif;
-  overflow-x: hidden;
-}
+=======
 html {
   scroll-behavior: smooth;
+}
+body {
+  background-color: #1f2937;
+>>>>>>> origin/primary
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
 .home  {
@@ -68,7 +70,11 @@ html {
 }
 
 .bg-card {
+<<<<<<< HEAD
   background-color: var(--main-color);
+=======
+  background-color: rgba(17, 24, 39, 0.98);
+>>>>>>> origin/primary
 }
 .bg-icon {
   background-color: rgba(0, 0, 255, 10%);
@@ -87,9 +93,13 @@ html {
   padding-bottom: var(--space) ;
 }
 .desc {
+<<<<<<< HEAD
   /* color: #d2d5dbe8; */
   color: var(--secondary-color);
   /* color: red; */
+=======
+  color: #d2d5dbe8;
+>>>>>>> origin/primary
 }
 .card-background {
   background-color: rgb(55 65 81);
